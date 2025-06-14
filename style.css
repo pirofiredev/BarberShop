@@ -24,11 +24,12 @@ header {
     display: flex;
     flex-direction: row;
     align-items: center;
-    padding: 15px 35px 15px 20px;
+    padding: 15px;
+    color: white;
 }
 
 .logo {
-    padding: 0 7% 0 5%;
+    padding: 0 13% 0 6%;
 }
 
 .menu {
@@ -36,20 +37,31 @@ header {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    gap: 15px;
+    gap: 20px;
 }
 .slider-wrap {
     display: flex;
 	flex-direction: row;
 	justify-content: space-between;
 }
+
+.number {
+    padding-left: 100px;
+}
+
 .side-head {
     width: 20%;
 }
 
-.slider-images {
+.slider-content {
     width: 80%;
-    background-color: black;
+    margin-right: 170px;    /*вот тут было бы лучше сделать более по умному*/
+}
+
+.slider-line {
+    position: absolute;
+    top: 200px;
+    left: 330px;
 }
 
 .img1 {
@@ -58,6 +70,8 @@ header {
 }
 
 .img2,.img3 {
+    width: 100%;
+    height: 100%;
     display: none;
 }
 
@@ -75,11 +89,13 @@ header {
 }
 .side-head-inner {
     display: flex;
+    flex-direction: row-reverse;
     transform: rotate(270deg);
     position: relative;
     bottom: 50%;
     top: 50%;
     gap: 50px;
+    letter-spacing: 3px;
 }
 
 .side-head-link {
@@ -93,5 +109,4 @@ header {
 
 .side-head-link:hover {
     color: #FF6C00;
-    
 }
