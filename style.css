@@ -59,10 +59,37 @@ header {
     width: 85%;
 }
 
-.slider-line {
+.slider-line, .slider-text-line, .slider-text-main, .slider-text-submain {
     position: absolute;
+}
+.slider-line {
     top: 40%;
     left: 21.5%;
+}
+
+.slider-text-line {
+    top: 38.5%;
+    left: 26.5%;
+    color: #6a6e7d;
+    opacity: 0.8;
+    text-transform: uppercase;
+}
+
+.slider-text-main {
+    top: 42%;
+    left: 21%;
+    color: #FFFFFF;
+    font-size: 88px;
+    font-weight: 700;
+}
+
+.slider-text-submain {
+    top: 58.5%;
+    left: 21.5%;
+    color: #9DA4BD;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 36px;
 }
 
 .img1 {
