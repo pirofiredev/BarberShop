@@ -155,7 +155,7 @@ header {
 
 .about-container {
     display: flex;
-    margin: 50px auto;
+    margin: 75px auto;
     padding: 0 5px;
     max-width: 1500px;
 }
@@ -163,12 +163,12 @@ header {
 .about-image-wrap {
     display: flex;
     gap: 25px;
-    width: 42%;
+    width: 48%;
 }
 
 .about-text-wrap {
     margin-left: 25px;
-    width: 58%;
+    width: 52%;
 }
 
  .about-mini-text,.horizonta-about-line  {
@@ -176,23 +176,33 @@ header {
  }
 
  .about-mini-text {
-    right: 940px;
-    top: 872px;
+    right: 856px;
+    top: 897px;
     text-transform: uppercase;
     font-weight: 600;
     font-size: 14px;
  }
 
  .about-text-main {
-    padding: 25px 0;
-    font-weight: 700;
+    padding: 15px 0;
+    font-weight: 600;
     font-family: "Raleway", sans-serif;
     letter-spacing: 1.5px;
+    line-height: 76px;
     font-size: 70px;
  }
 
 .about-text-first-submain {
     font-size: 29px;
     opacity: 0.5;
-    padding: 25px 0;
+    padding: 15px 0;
+    color: #555555;
+}
+
+.about-text-second-submain {
+    font-size: 18px;
+    padding-bottom: 25px;
+    width: 510px;
+    color: #555555;
+    line-height: 28px;
 }
