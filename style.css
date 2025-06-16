@@ -1,4 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
 
 * {
     margin: 0;
@@ -51,6 +53,10 @@ header {
     padding: 0 40px 0 300px;
 }
 
+#online-booking-head, #online-booking-about {
+    text-transform: uppercase;
+}
+
 .side-head {
     width: 15%;
 }
@@ -76,11 +82,12 @@ header {
 }
 
 .slider-text-main {
-    top: 42%;
+    top: 43%;
     left: 21%;
     color: #FFFFFF;
     font-size: 88px;
     font-weight: 700;
+    font-family: "Raleway", sans-serif;
 }
 
 .slider-text-submain {
@@ -143,4 +150,49 @@ header {
 
 .side-head-link:hover {
     color: #FF6C00;
+}
+
+
+.about-container {
+    display: flex;
+    margin: 50px auto;
+    padding: 0 5px;
+    max-width: 1500px;
+}
+
+.about-image-wrap {
+    display: flex;
+    gap: 25px;
+    width: 42%;
+}
+
+.about-text-wrap {
+    margin-left: 25px;
+    width: 58%;
+}
+
+ .about-mini-text,.horizonta-about-line  {
+    position: absolute;
+ }
+
+ .about-mini-text {
+    right: 940px;
+    top: 872px;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 14px;
+ }
+
+ .about-text-main {
+    padding: 25px 0;
+    font-weight: 700;
+    font-family: "Raleway", sans-serif;
+    letter-spacing: 1.5px;
+    font-size: 70px;
+ }
+
+.about-text-first-submain {
+    font-size: 29px;
+    opacity: 0.5;
+    padding: 25px 0;
 }
