@@ -87,11 +87,12 @@ header {
 .menu-item:hover {
     color: #FF6C00;
 }
+
 .side-head-inner {
     display: flex;
     flex-direction: row-reverse;
-    transform: rotate(270deg);
     position: relative;
+    transform: rotate(270deg);
     bottom: 50%;
     top: 50%;
     gap: 50px;
