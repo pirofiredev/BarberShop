@@ -8,76 +8,82 @@
     <script src="script.js" defer></script>
 </head>
 <body>
-    <section class="head-wrap">
-        <div class="head-container">
+    <div class="container"> <!--возможная ошибка, контейнер должен быть после wrap-а-->
+        <section class="head-wrap">
                 <div class="header-inner">
                     <img src="img/drawable/logo.svg" class="logo">
-                    <div class="menu">
-                        <a href="#" class="menu-item">About</a>
-                        <a href="#" class="menu-item">Services & prices</a>
-                        <a href="#" class="menu-item">Barbers</a>
-                        <a href="#" class="menu-item">Contacts</a>
+                        <div class="menu">
+                            <a href="#" class="menu-item">About</a>
+                            <a href="#" class="menu-item">Services & prices</a>
+                            <a href="#" class="menu-item">Barbers</a>
+                            <a href="#" class="menu-item">Contacts</a>
 
-                        <p class="number">+38 044 111 11 11</p>
+                            <p class="number">+38 044 111 11 11</p>
 
-                        <button id="online-booking-white">online - booking</button>
+                            <button id="online-booking-white">online - booking</button>
+                        </div>
+                    </div>
+                <div class="slider-wrap">
+                    <div class="side-head">
+                        <div class="side-head-inner">
+                            <a href="https://youtube.com" target="_blank" class="side-head-link youtube">youtube</a>
+                            <a href="https://instagram.com" target="_blank" class="side-head-link instagram">instagram</a>
+                            <img src="img/drawable/verticalLine.svg" class="vertical-line">
+                        </div>
+                    </div>
+                    <div class="slider-content">
+                        <img src="img/raw/sliderBG1.jpg" class="slider-img1">
+                        <img src="img/raw/sliderBG2.jpg" class="slider-img2">
+                        <img src="img/raw/sliderBG3.jpg" class="slider-img3">
+                        <img src="img/drawable/horizontalSliderLine.svg" class="slider-line">
+
+                        <p class="slider-text-line">a hair salon for men in Kyiv </p>
+                        <p class="slider-text-main">BarberShop</p>
+                        <p class="slider-text-submain">We are experts in trendy men’s haircuts. <br>We work quickly, carefully and with style.</p>
                     </div>
                 </div>
-            <div class="slider-wrap">
-                <div class="side-head">
-                    <div class="side-head-inner">
-                        <a href="https://youtube.com" target="_blank" class="side-head-link youtube">youtube</a>
-                        <a href="https://instagram.com" target="_blank" class="side-head-link instagram">instagram</a>
-                        <img src="img/drawable/verticalLine.svg" class="vertical-line">
+            </div>
+        </section>
+    </div>
+
+        <div class="container"> <!--возможная ошибка, контейнер должен быть после wrap-а-->
+            <section class="about-wrap">
+                    <div class="about-image-wrap">
+                        <img src="img/raw/aboutVerticalIMG1.jpg" class="about-img1">
+                        <img src="img/raw/aboutVerticalIMG2.jpg" class="about-img2">
                     </div>
-                </div>
-                <div class="slider-content">
-                    <img src="img/raw/sliderBG1.jpg" class="slider-img1">
-                    <img src="img/raw/sliderBG2.jpg" class="slider-img2">
-                    <img src="img/raw/sliderBG3.jpg" class="slider-img3">
-                    <img src="img/drawable/horizontalSliderLine.svg" class="slider-line">
+                    <div class="about-text-wrap">
+                        <img src="img/drawable/horizontalLine.svg" class="horizontal-about-line">
+                        <p class="about-mini-text">about</p>
+                        <p class="about-text-main">Best Barbershop in <br> your city</p>
+                        <p class="about-text-first-submain">If you want to add more confidence to your image,<br> you should definitely visit us.</p>
+                        <p class="about-text-second-submain">We are a team that never stops at what has been achieved and are thirsty for changes. And when you fall into the hands of our master, you will never be the same again. We are a team that is always "on the same wave" with clients. Therefore, we are always ready to improve everyone who comes to us!</p>
 
-                    <p class="slider-text-line">a hair salon for men in Kyiv </p>
-                    <p class="slider-text-main">BarberShop</p>
-                    <p class="slider-text-submain">We are experts in trendy men’s haircuts. <br>We work quickly, carefully and with style.</p>
-                </div>
-            </div>
+                        <button id="online-booking-black">online-booking</button>
+                    </div>
         </div>
-    </section>
+        </section>
 
-    <section class="about-wrap">
-        <div class="about-container">
-            <div class="about-image-wrap">
-                <img src="img/raw/aboutVerticalIMG1.jpg" class="about-img1">
-                <img src="img/raw/aboutVerticalIMG2.jpg" class="about-img2">
-            </div>
-            <div class="about-text-wrap">
-                <img src="img/drawable/horizontalLine.svg" class="horizontal-about-line">
-                <p class="about-mini-text">about</p>
-                <p class="about-text-main">Best Barbershop in <br> your city</p>
-                <p class="about-text-first-submain">If you want to add more confidence to your image,<br> you should definitely visit us.</p>
-                <p class="about-text-second-submain">We are a team that never stops at what has been achieved and are thirsty for changes. And when you fall into the hands of our master, you will never be the same again. We are a team that is always "on the same wave" with clients. Therefore, we are always ready to improve everyone who comes to us!</p>
 
-                <button id="online-booking-black">online-booking</button>
-            </div>
-        </div>
-    </section>
+
+    
 
     <section class="services-wrap">
         <div class="services-container">
             <img src="img/raw/servicesBG1.png" class="services-bg1">
             <img src="img/drawable/horizontalServicesLine.svg" class="horizontal-services-line">
-            
+                
             <p class="services-mini-text">Spend your time with the best masters</p>
             <p class="services-main-text">Services and prices</p>
-<!-- 
-            <div class="services-wrap-card1">
-                <div class="services-container-card1">
-                    <p class="services-service">Men’s haircut</p>
+    <!-- 
+                <div class="services-wrap-card1">
+                    <div class="services-container-card1">
+                        <p class="services-service">Men’s haircut</p>
+                    </div>
                 </div>
-            </div>
 
-            <div class="services-wrap-card2"></div> -->
+                <div class="services-wrap-card2"></div> -->
     </section>
+</div>
 </body>
 </html>

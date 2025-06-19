@@ -8,14 +8,14 @@
     font-family: "Open Sans", sans-serif;
 }
 
+.container {
+    max-width: 1170px;
+    margin: 0 auto;
+}
 
 /* HEAD SECTION */
 
-.head-container {
-    max-width: 1420px;
-    margin: 0 auto;
-    padding-left: 5px;
-    padding-right: 5px;
+.head-wrap {
     position: relative;
     font-size: 16px;
 }
@@ -34,9 +34,9 @@
 }
 
 .logo {
-    width: 80px;
-    height: 100px;
-    padding: 0 11% 0 0;
+    width: 70px;
+    height: 90px;
+    padding: 0 10.5% 0 0.6%;
 }
 
 .menu {
@@ -44,7 +44,7 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    gap: 38px;
+    gap: 30px;
 }
 .slider-wrap {
     display: flex;
@@ -54,8 +54,7 @@
 
 .number {
     font-size: 11px;
-    padding: 0 0 0 269px;
-    font-size: 15px;
+    padding: 0 5px 0 225px;
 }
 
 #online-booking-white {
@@ -65,14 +64,15 @@
     color: white;
     border: 1px solid #FF6C00;
     border-radius: 25px;
-    width: 190px;
-    height: 40px;
+    width: 155px;
+    height: 35px;
     transition: 0.2s all ease-in-out;
 }
 
 #online-booking-white:hover {
     background-color: #FF6C00;
     border: 1px solid #FFFFFF;
+    box-shadow: 0px 2px 3px black;
 }
 
 #online-booking-white:active {
@@ -88,12 +88,11 @@
 }
 
 .side-head {
-    width: 8.5%;
+    width: 10%;
 }
 
 .slider-content {
-    width: 91.5%;
-    height: 816px;
+    width: 90%;
 }
 
 .slider-line, .slider-text-line, .slider-text-main, .slider-text-submain {
@@ -101,24 +100,25 @@
 }
 .slider-line {
     top: 41%;
-    left: 18%;
+    left: 19%;
 }
 
 .slider-text-line {
     top: 39.8%;
-    left: 23%;
+    left: 26%;
     color: #6a6e7d;
     opacity: 0.8;
     text-transform: uppercase;
     -webkit-user-select: none;
     user-select: none;
+    font-size: 11px;
 }
 
 .slider-text-main {
-    top: 45%;
-    left: 18%;
+    top: 44.5%;
+    left: 18.7%;
     color: #FFFFFF;
-    font-size: 92px;
+    font-size: 76px;
     font-weight: 700;
     font-family: "Raleway", sans-serif;
     -webkit-user-select: none;
@@ -126,12 +126,12 @@
 }
 
 .slider-text-submain {
-    top: 61%;
-    left: 18%;
+    top: 60%;
+    left: 18.5%;
     color: #9DA4BD;
     font-weight: 400;
-    font-size: 22px;
-    line-height: 36px;
+    font-size: 18px;
+    line-height: 30px;
 }
 
 .slider-img1 {
@@ -152,7 +152,8 @@
     text-decoration: none;
     -webkit-user-select: none;
     user-select: none;
-    font-size: 14px;
+    font-size: 13px;
+    letter-spacing: 1px;
 }
 
 .menu-item:hover {
@@ -165,15 +166,15 @@
     transform: rotate(270deg);
     position: relative;
     top: 58%;
-    left: 2%;
-    gap: 54px;
+    left: 14%;
+    gap: 39px;
     letter-spacing: 3px;
-    font-size: 14px;
+    font-size: 11px;
 }
 
 .vertical-line {
     rotate: 270deg;
-    padding-left: 30px;
+    padding-left: 40px;
 }
 
 .side-head-link {
@@ -198,57 +199,68 @@
 }
 
 
-.about-container {
+.about-wrap {
     display: flex;
-    margin: 75px auto;
-    padding: 0 5px;
-    max-width: 1170px;
+    margin: 117px auto 117px auto;
     max-height: 680px;
 }
 
 .about-image-wrap {
     display: flex;
     gap: 25px;
-    width: 60%;
+    width: 50%;
+    padding-left: 20px;
+}
+
+.about-img1,.about-img2 {
+    width: 100%;
+    height: 100%;
+}
+
+.horizontal-about-line, .about-mini-text  {
+    position: absolute;
+}
+
+.horizontal-about-line {
+    right: 876px;
+    top: 796px;
 }
 
 .about-text-wrap {
     margin-left: 25px;
-    width: 40%;
+    width: 50%;
 }
-
- .about-mini-text  {
-    position: absolute;
- }
-
  .about-mini-text {
+    position: absolute;
+    right: 819px;
+    top: 790px;
     text-transform: uppercase;
     font-weight: 600;
-    font-size: 14px;
- }
+    font-size: 11px;
+}
 
  .about-text-main {
-    padding: 15px 0;
+    padding: 25px 0 20px 0;
     font-weight: 600;
     font-family: "Raleway", sans-serif;
     letter-spacing: 1.5px;
-    line-height: 76px;
-    font-size: 70px;
- }
+    font-size: 43px;
+}
 
 .about-text-first-submain {
-    font-size: 29px;
+    font-size: 18px;
     opacity: 0.5;
-    padding: 15px 0;
     color: #555555;
+    line-height: 27px;
+    padding-bottom: 18px;
 }
 
 .about-text-second-submain {
-    font-size: 18px;
-    padding-bottom: 25px;
+    font-size: 15px;
+    padding-bottom: 40px;
     width: 510px;
     color: #555555;
-    line-height: 28px;
+    line-height: 26px;
 }
 
 #online-booking-black {
@@ -258,14 +270,14 @@
     color: black;
     border: 1px solid #FF6C00;
     border-radius: 25px;
-    width: 190px;
+    width: 160px;
     height: 40px;
     transition: 0.2s all ease-in-out;
 }
 
 #online-booking-black:hover {
     background-color: #FF6C00;
-    border: none;
+    border: solid black 1px;
     box-shadow: 0px 2px 3px black;
 }
 
@@ -280,6 +292,7 @@
 
 
 .services-bg1 {
+    max-width: 100%;
     width: 100%;
     height: 25%;
 }
