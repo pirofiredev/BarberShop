@@ -304,13 +304,13 @@
     left: 377px;
 }
 .services-mini-text {
-    padding: 150px 0 20px 80px;
+    padding: 150px 0 20px 90px;
     color: #6a6e7d;
     opacity: 0.6;
     text-transform: uppercase;
     -webkit-user-select: none;
     user-select: none;
-    font-size: 11px;
+    font-size: 12px;
 }
 
 .services-main-text {
@@ -321,7 +321,7 @@
     font-family: "Raleway", sans-serif;
     -webkit-user-select: none;
     user-select: none;
-    letter-spacing: 1px;
+    letter-spacing: 2.1px;
 }
 
 .services-card-container {
@@ -333,6 +333,7 @@
     width: 570px;
     height: 255px;
 }
+
 .card1 {
     background-image: linear-gradient(180deg, #171A24, #171A2433);
     margin-right: 40px;
@@ -341,6 +342,21 @@
     background-image: linear-gradient(180deg, #090B13, #090B1333);
 }
 
-.dots {
-    border-bottom: 2px solid #9DA4BD;
+.services-text-container {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+}
+
+.service-price-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 33px 33px 0 35px;
+    font-size: 20px;
+}
+.service-price-separator {
+    flex: 1;
+    border-bottom: 1px solid #9DA4BD1F;
+    margin: 0.6em 5px 0;
 }
