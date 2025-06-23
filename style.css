@@ -95,14 +95,15 @@
 
 .slider-content {
     width: 90%;
+    background: url("img/raw/sliderBG1.jpg");
 }
 
 .slider-text-main, .slider-text-submain {
     position: absolute;
 }
-.slider-horizontal-line {
-    top: 41%;
-    left: 19%;
+.slider-line-minitext {
+    display: flex;
+    gap: 20px;
 }
 
 .slider-text-line {
@@ -450,4 +451,16 @@
     font-size: 22px;
     color: #555555;
     line-height: 35px;
+}
+
+
+/*! BARBERS SECTION */
+
+.barbers-wrap {
+    margin: 150px auto;
+}
+
+.barbers-line-minitext {
+    display: flex;
+    gap: 20px;
 }
