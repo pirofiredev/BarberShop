@@ -525,3 +525,51 @@
 .social-button-container:hover .social-icon{
     filter: invert(51%) sepia(57%) saturate(4621%) hue-rotate(2deg) brightness(103%) contrast(104%);
 }
+
+
+/*! TIP SECTION */
+
+.tip-wrap {
+    padding: 120px 0;
+}
+
+.tip-line-minitext {
+    display: flex;
+    gap: 20px;
+}
+
+.tip-text-line {
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 12px;
+}
+
+.tip-images-wrap {
+    display: flex;
+    gap: 30px;
+    padding-top: 40px;
+}
+
+.tip-image {
+    width: 276px;
+    height: 367px;
+}
+
+
+
+/*! CONTACT SECTION */
+
+
+.contact-wrap {
+    display: flex;
+    padding: 15px 0;
+}
+
+.contant-first-half-wrap {
+    width: 50%;
+    background-color: #191C26;
+}
+
+.contact-main-text {
+    color: #FFFFFF;
+}
