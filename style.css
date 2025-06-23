@@ -13,7 +13,7 @@
     margin: 0 auto;
 }
 
-/* HEAD SECTION */
+/*! HEAD SECTION */
 
 .head-wrap {
     position: relative;
@@ -290,7 +290,7 @@
     transition: 0.05s all ease-in-out;
 }
 
-/* SERVICES SECTION */
+/*! SERVICES SECTION */
 
 
 .services-wrap {
@@ -371,4 +371,16 @@
     margin: 80px auto 0 auto;
     width: 180px !important;
     height: 50px !important;
+}
+
+/*! REASONING SECTION */
+
+.reasoning-wrap {
+    margin: 117px auto;
+}
+
+.reasoning-rectangle {
+    width: 100px;
+    height: 100px;
+    background-color: #F7F7F7;
 }
