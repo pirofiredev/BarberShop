@@ -560,16 +560,30 @@
 /*! CONTACT SECTION */
 
 
+
 .contact-wrap {
     display: flex;
     padding: 15px 0;
+    height: 750px;
 }
 
-.contant-first-half-wrap {
+.booking-wrap {
     width: 50%;
     background-color: #191C26;
 }
 
+.contacts-wrap {
+    width: 50%;
+    background: url("img/raw/contactBG.png");
+    background-color: #191C26;
+    background-size: cover;
+}
+
 .contact-main-text {
+    font-family: "Raleway", sans-serif;
+    font-weight: 700;
+    font-size: 52px;
     color: #FFFFFF;
+    padding: 155px 0 5px 241px;
+    letter-spacing: 1.9px;
 }
