@@ -8,7 +8,7 @@
     font-family: "Open Sans", sans-serif;
 }
 
-.container {
+ .container {
     max-width: 1170px;
     margin: 0 auto;
 }
@@ -400,7 +400,7 @@
     align-items: center;
     position: relative;
     width: 37%;
-    height: 46%;
+    height: 47.5%;
     background-color: #F7F7F7;
     clear: both;
     overflow: auto;
@@ -409,7 +409,7 @@
 .reasoning-rectangle-number-plus {
     display: flex;
     justify-content: center;
-    padding-top: 10px;
+    padding-top: 12px;
 }
 
 .reasoning-rectangle-number {
@@ -591,7 +591,37 @@
     font-weight: 700;
     font-size: 52px;
     color: #FFFFFF;
-    padding: 155px 0 5px 241px;
+    padding: 155px 0 5px 0;
     letter-spacing: 1.9px;
 }
 
+.contact-field {
+    outline: none;
+    border: none !important;
+    background: none;
+
+    border-bottom: 2px solid #9DA4BD !important; 
+    opacity: 0.8;
+    color: #FFFFFF;
+}
+
+.contact-field::placeholder {
+    color: #9DA4BD;
+    opacity: 0.8;
+    text-transform: uppercase;
+}
+
+.contact-field:focus {
+    border-bottom: 2px solid #FFFFFF !important;
+}
+
+.contact-field:focus::placeholder {
+    color: #FFFFFF;
+    opacity: 1;
+}
+
+
+#contact-number-field {
+    appearance: textfield;
+    -moz-appearance: textfield;
+}
