@@ -319,11 +319,15 @@
                 <p class="booking-main-text">Online-booking</p>
 
                 <span class="booking-name-number-fields">
-                    <input type="text" id="booking-name-field" class="booking-field" autocomplete="name" placeholder="name*">
-                    <input type="number" id="booking-number-field" class="booking-field" autocomplete="tel" placeholder="phone*">
+                    <input type="text" id="booking-name-field" class="booking-field" autocomplete="name" oninput="typingName()" onload="typingName()">
+                    <p class="booking-placeholder" id="booking-name-placeholder">name*</p>
+                    <input type="number" id="booking-number-field" class="booking-field" autocomplete="tel" pattern="\d+" oninput="typingNumber()" oninvalid="notNumber()">
+                    <p class="booking-placeholder" id="booking-phone-placeholder">phone*</p>
                 </span>
 
-                <input type="text" id="booking-comment-field" class="booking-field" autocomplete="off" placeholder="message*">
+
+                <p class="booking-placeholder" id="booking-comment-placeholder">message</p>
+                <input type="text" id="booking-comment-field" class="booking-field" autocomplete="off">
         </div>
 
         <div class="contacts-wrap">

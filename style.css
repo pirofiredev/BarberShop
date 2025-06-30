@@ -609,16 +609,13 @@
 }
 
 .booking-wrap {
-    display: flex;
-    flex-direction: column;
-
     width: 51%;
     background-color: #191C26;
 }
 
 .booking-wrap * {
     left: 26.5%;
-    max-width: 71.5%;
+    max-width: 70% !important;
 }
 
 .contacts-wrap {
@@ -654,18 +651,15 @@
     justify-content: space-between;
     position: relative;
     top: 5.5%;
+    gap: 35px;
 }
 
 #booking-name-field, #booking-number-field {
-    width: 325px;
+    width: 48%;
     height: 35px;
 }
 
-#booking-number-field {
-    margin-right: 15px;
-}
-
-.booking-field::placeholder {
+.booking-placeholder {
     color: #9DA4BD;
     opacity: 0.8;
     text-transform: uppercase;
@@ -674,11 +668,26 @@
     letter-spacing: 1.5px;
 }
 
+#booking-name-placeholder, #booking-phone-placeholder {
+    position: absolute;
+}
+
+#booking-name-placeholder {
+    top: 17%;
+    left: 0.01%;
+}
+
+#booking-phone-placeholder {
+    top: 17%;
+    left: 53%;
+}
+
+
 .booking-field:focus {
     border-bottom: 2px solid #FFFFFF !important;
 }
 
-.booking-field:focus::placeholder {
+.booking-field:focus .booking-placeholder {
     color: #FFFFFF;
     opacity: 1;
 }
@@ -690,6 +699,10 @@
     -webkit-appearance: textfield;
 }
 
+#booking-number-field:invalid {
+    color: red;
+}
+
 .redsquare {
     background-color: red;
     width: 250px;
@@ -698,13 +711,20 @@
 
 #booking-comment-field {
     position: relative;
-    top: 22%;
-    overflow: hidden;
-    height: 55px;
+    top: 14.7%;
+    width: 100%;
+    height: 7%;
+    overflow: scroll;
     line-height: 0;
 }
 
-#booking-comment-field::placeholder {
-    padding-bottom: 100px;
-    text-indent: 100px;
+#booking-comment-placeholder {
+    position: relative;
+    top: 12%;
+}
+
+#booking-comment-field:valid {
+    border-bottom: 1px solid #FFFFFF;
+    color: #FFFFFF;
+    opacity: 1;
 }
