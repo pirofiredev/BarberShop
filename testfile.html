@@ -1,27 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+  <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>testing file</title>
+    <link rel="stylesheet" href="style.css">
+    <title>CSS Positioning</title>
     <style>
-        .service-price-container {
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-        }
-        .service-price-separator {
-            flex: 1;
-            border-bottom: 1px solid #9DA4BD1F;
-            margin: 0.6em 5px 0;
-        }
+        body {
+  margin: 100px auto;
+}
+
+.parent {
+  width: 500px;
+  border: 1px solid red;
+  margin: auto;
+  text-align: center;
+}
+
+.child {
+  border-radius: 10%;
+  width: 100px;
+  height: 100px;
+  margin: 20px;
+}
+
+.one {
+  background-color: powderblue;
+  position: relative;
+  right: 50px;
+}
+
+.two {
+  background-color: royalblue;
+}
+
+.three {
+  background-color: sienna;
+}
+
+.four {
+  background-color: slateblue;
+}
+
     </style>
-</head>
-<body>
-    <div class="service-price-container">
-        <span class="service-name">Men’s haircut</span>
-        <span class="service-price-separator"></span>
-        <span class="service-price">from 300 uah</span>
+  </head>
+  <body>
+    <div class="parent">
+      <div class="child one">One</div>
+      <div class="child two">Two</div>
+      <div class="child three">Three</div>
+      <div class="child four">Four</div>
     </div>
-</body>
+  </body>
 </html>
