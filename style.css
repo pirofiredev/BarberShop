@@ -88,7 +88,7 @@
 }
 
 
-.online-booking-white, .online-booking-black {
+.online-booking-white, .online-booking-black, .submit-white-button {
     text-transform: uppercase;
 }
 
@@ -108,7 +108,6 @@
     display: flex;
     top: 280px;
     left: 225px;
-
     gap: 20px;
 }
 
@@ -623,6 +622,7 @@
     background: url("img/raw/contactBG.png");
     background-color: #191C26;
     background-size: cover;
+    z-index: 0;
 }
 
 .booking-main-text {
@@ -666,15 +666,19 @@
     /* padding-bottom: 10px; */
     font-size: 14px;
     letter-spacing: 1.5px;
+    -webkit-user-select: none;
+    user-select: none;
+    transition: 0.5s all ease-in-out;
 }
 
 #booking-name-placeholder, #booking-phone-placeholder {
     position: absolute;
+    z-index: 0;
 }
 
 #booking-name-placeholder {
     top: 17%;
-    left: 0.01%;
+    left: 0.5%;
 }
 
 #booking-phone-placeholder {
@@ -682,12 +686,19 @@
     left: 53%;
 }
 
+.booking-field {
+    color: #9DA4BD;
+    opacity: 0.8;
+    transition: 0.5s all ease-in-out;
+    z-index: 1;
+}
 
 .booking-field:focus {
     border-bottom: 2px solid #FFFFFF !important;
+    color: #FFFFFF;
 }
 
-.booking-field:focus .booking-placeholder {
+.booking-field:focus + .booking-placeholder {
     color: #FFFFFF;
     opacity: 1;
 }
@@ -703,15 +714,9 @@
     color: red;
 }
 
-.redsquare {
-    background-color: red;
-    width: 250px;
-    height: 250px;
-}
-
 #booking-comment-field {
     position: relative;
-    top: 14.7%;
+    top: 17.5%;
     width: 100%;
     height: 7%;
     overflow: scroll;
@@ -720,11 +725,90 @@
 
 #booking-comment-placeholder {
     position: relative;
-    top: 12%;
+    top: 5%;
 }
 
 #booking-comment-field:valid {
     border-bottom: 1px solid #FFFFFF;
     color: #FFFFFF;
     opacity: 1;
+}
+
+.submit-white-button {
+    position: relative;
+    left: 257px;
+    top: 163px;
+    background-color: transparent;
+    outline: none;
+    text-decoration: none;
+    color: white;
+    border: 1px solid #FF6C00;
+    border-radius: 25px;
+    width: 195px;
+    height: 50px;
+    transition: 0.2s all ease-in-out;
+    font-weight: 600;
+}
+
+.submit-white-button:hover {
+    background-color: #FF6C00;
+    border: 1px solid #FFFFFF;
+    box-shadow: 0px 2px 3px white;
+}
+
+.submit-white-button:active {
+    transform: scale(0.95);
+    transform: translateY(2px);
+    box-shadow: none;
+    transition: 0.05s all ease-in-out;
+}
+
+.contants-container  {
+    padding: 125px;
+}
+
+
+.contacts-main-text {
+    margin-top: 30px;
+    color: #FFFFFF;
+    font-size: 50px;
+    font-weight: 700;
+    font-family: "Raleway", sans-serif;
+    -webkit-user-select: none;
+    user-select: none;
+    letter-spacing: 2.1px;  
+}
+
+.contacts-items {
+    margin-top: 55px;
+    display: flex;
+    flex-direction: column;
+    gap: 28px;
+    color: #9DA4BD;
+    font-weight: 700;
+    font-size: 20px;
+    letter-spacing: 1.5px;
+    line-height: 32px;
+}
+
+.contacts-items *  {
+    display: flex;
+    margin-right: 20px;
+}
+
+.contacts-icon {
+    width: 28px;
+    height: 34px;
+}
+
+#contacts-number {
+    font-weight: 400;
+    letter-spacing: 1px;
+}
+
+#contacts-mail {
+    font-weight: 400;
+    letter-spacing: 1.4px;
+    color: #9DA4BD;
+    cursor: pointer;
 }

@@ -26,14 +26,7 @@ function typingNumber() {
     }
 }
 
-function notNumber() {
-    let numberInput = document.querySelector("#booking-number-field").value;
-    const defaultPlaceholder = numberPlaceHolder;
-
-    if(numberInput.textContent) {
-        document.querySelector("#booking-phone-placeholder").innerHTML = "Please, input the phone number.";
-    }
-    else {
-        document.querySelector("#booking-phone-placeholder").innerHTML = defaultPlaceholder;
-    }
-}
+addEventListener("load",()=>{
+    typingName();
+    typingNumber();
+});
